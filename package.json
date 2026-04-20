@@ -1,0 +1,27 @@
+{
+  "name": "rlm-ts",
+  "version": "0.1.0",
+  "description": "Recursive Language Models (TypeScript / Bun port)",
+  "type": "module",
+  "module": "src/index.ts",
+  "main": "src/index.ts",
+  "scripts": {
+    "quickstart": "bun run examples/quickstart.ts",
+    "docker-example": "bun run examples/docker_example.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "openai": "^4.77.0"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/node": "^22.10.0",
+    "typescript": "^5.6.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "engines": {
+    "bun": ">=1.1.0"
+  }
+}
